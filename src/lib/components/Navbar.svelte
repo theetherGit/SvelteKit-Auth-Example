@@ -36,7 +36,7 @@
                     </button>
                     {:else}
                     {#each providers as provider}
-                        <button class="btn btn-primary hover:bg-white hover:border-primary  gap-2" on:click={() => signIn(provider.id)}>
+                        <button class="btn btn-primary hover:bg-white hover:text-gray-900 gap-2" on:click={() => signIn(provider.id)}>
                             <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 16 16"

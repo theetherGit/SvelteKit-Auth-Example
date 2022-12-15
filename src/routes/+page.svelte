@@ -18,7 +18,7 @@
             <h2 class="card-title">{$page.data.session.user?.name ?? "User"}</h2>
             <p>Expire Time: {new Date($page.data.session.expires)}</p>
             <div class="card-actions justify-end">
-                <a href="https://github.com/theetherGit/SvelteKit-Auth-Example" target="_blank" rel="noreferrer" class="btn btn-primary hover:bg-white hover:border-error gap-2"><svg
+                <a href="https://github.com/theetherGit/SvelteKit-Auth-Example" target="_blank" rel="noreferrer" class="btn btn-primary hover:bg-white hover:text-gray-900 gap-2"><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 16 16"
                         width="32"
@@ -42,15 +42,12 @@
             <span>Start a new SvelteKit Project with TailwindCSS, DaisyUI and AuthJs (Formerly known as NextAuth) </span>
         </div>
     </div>
-    <div>
         <div class="mockup-code">
             <pre data-prefix="~"><code>Creating new <a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer" class="text-secondary">SvelteKit</a> project</code></pre>
             <pre data-prefix="$"><code>pnpm create svelte@latest SvelteKit-Auth-Example</code></pre>
             <pre data-prefix=">" class="text-warning"><code>creating...</code></pre>
             <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
         </div>
-    </div>
-    <div>
         <div class="mockup-code">
             <pre data-prefix="~"><code>Adding <a href="https://tailwindcss.com/docs/guides/sveltekit" target="_blank" rel="noreferrer" class="text-secondary">TailwindCSS</a> and <a href="https://daisyui.com/" target="_blank" rel="noreferrer" class="text-secondary">DaisyUI</a> to SvelteKit</code></pre>
             <pre data-prefix="$"><code>pnpm install -D tailwindcss postcss autoprefixer svelte-preprocess</code></pre>
@@ -59,8 +56,32 @@
             <br>
             <pre data-prefix="~"><code>Initiating tailwind.config.cjs</code></pre>
             <pre data-prefix="$"><code>pnpx tailwindcss init tailwind.config.cjs -p</code></pre>
-
         </div>
+
+    <div class="mockup-code">
+        <div class="tabs ml-3">
+            <a class="tab tab-lifted tab-active">svelte.config.js</a>
+        </div>
+        <pre>
+<code>
+    {(`import adapter from '@sveltejs/adapter-auto';
+    import preprocess from "svelte-preprocess";
+
+    /** @type {import('@sveltejs/kit').Config} */
+    const config = {
+        kit: {
+            adapter: adapter()
+        },
+        preprocess: [
+            preprocess({
+                postcss: true,
+            }),
+        ],
+    };
+    export default config;`)}
+</code>
+        </pre>
+
     </div>
 </div>
 
