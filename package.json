@@ -20,7 +20,7 @@
 		"@sveltejs/kit": "^1.0.0",
 		"@tailwindcss/typography": "^0.5.8",
 		"autoprefixer": "^10.4.13",
-		"daisyui": "^2.43.2",
+		"daisyui": "^2.45.0",
 		"postcss": "^8.4.20",
 		"prettier": "^2.8.1",
 		"prettier-plugin-svelte": "^2.9.0",
@@ -35,7 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@next-auth/upstash-redis-adapter": "^3.0.3",
-		"@upstash/redis": "^1.18.1"
+		"@auth/core": "^0.1.4",
+		"@auth/sveltekit": "^0.1.6"
 	}
 }
