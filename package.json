@@ -13,11 +13,9 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@auth/core": "^0.1.4",
-		"@auth/sveltekit": "^0.1.6",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^1.0.0",
-		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/kit": "^1.0.1",
 		"@tailwindcss/typography": "^0.5.8",
 		"autoprefixer": "^10.4.13",
 		"daisyui": "^2.45.0",

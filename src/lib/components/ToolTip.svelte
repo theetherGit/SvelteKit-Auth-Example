@@ -1,4 +1,5 @@
-<div class="tooltip tooltip-info" data-tip="{tip}"><slot/></div>
 <script>
-    export let tip;
+	export let tip;
 </script>
+
+<div class="tooltip tooltip-info" data-tip={tip}><slot /></div>
