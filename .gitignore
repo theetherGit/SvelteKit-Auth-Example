@@ -9,3 +9,8 @@ node_modules
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .idea
+.idea/SvelteKit-Auth-Example.iml
+.idea/modules.xml
+.idea/inspectionProfiles
+.idea/vcs.xml
+.idea/workspace.xml

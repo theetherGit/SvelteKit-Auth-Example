@@ -1,7 +1,7 @@
 import type { PageLoad } from './$types';
 
 // https://vitejs.dev/guide/features.html#glob-import
-const globs = import.meta.glob(`../**/**/**.{svelte,ts,css}`, { as: 'raw' });
+const globs = import.meta.glob(`../lib/**/**.{svelte,ts,css}`, { as: 'raw' });
 
 export const load: PageLoad = async ({ url, route }) => {
     const modules = Object.entries(globs)

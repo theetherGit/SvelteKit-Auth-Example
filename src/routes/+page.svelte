@@ -36,7 +36,8 @@
 	let codeFiles, css
 	$:  {
 		codeFiles = $page.data.code
-		css = Object.keys(codeFiles).find((key) => codeFiles[key].filename === 'app.css')
+		console.log(codeFiles)
+		css = Object.keys(codeFiles).find((key) => codeFiles[key].filename === 'demo.css')
 	}
 
 </script>
