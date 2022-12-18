@@ -3,6 +3,7 @@
 	import MockupCode from '$lib/components/MockupCode.svelte';
 	import ToolTip from '$lib/components/ToolTip.svelte';
 	import { browser } from '$app/environment';
+	import Routes from '$lib/guideComponents/Routes.svelte';
 	let tailwindConfigJS = {
 		1: { data: 'module.exports = {', class: '' },
 		2: { data: "content: ['./src/**/*.{html,js,svelte,ts}'],", class: 'bg-gray-900 text-gray-100' },
@@ -135,25 +136,25 @@
 			<div class="alert alert-info shadow-lg">
 				<div>
 					<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							class="stroke-current flex-shrink-0 w-6 h-6"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						class="stroke-current flex-shrink-0 w-6 h-6"
 					>
 						<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
 						/>
 					</svg>
 					<span>
-							Before you start, Make sure have installed <span class="bg-white text-gray-900 px-1"
-					>Node v16</span
-					>
-							or greater. You can use <span class="bg-white text-gray-900 px-1">npm/yarn/pnpm</span> as
-							package manager it's all upto you.
-						</span>
+						Before you start, Make sure have installed <span class="bg-white text-gray-900 px-1"
+							>Node v16</span
+						>
+						or greater. You can use <span class="bg-white text-gray-900 px-1">npm/yarn/pnpm</span> as
+						package manager it's all upto you.
+					</span>
 				</div>
 			</div>
 			<ul>
@@ -166,18 +167,18 @@
 			</ul>
 		</div>
 		<MockupCode name="Bash">
-		<pre data-prefix="~"><code
-		>Creating new <a
-				href="https://kit.svelte.dev/"
-				target="_blank"
-				rel="noreferrer"
-				class="bg-white text-gray-900 px-1"
-		><ToolTip tip="MetaFramework for Svelte">SvelteKit</ToolTip></a
-		> project</code
-		></pre>
+			<pre data-prefix="~"><code
+					>Creating new <a
+						href="https://kit.svelte.dev/"
+						target="_blank"
+						rel="noreferrer"
+						class="bg-white text-gray-900 px-1"
+						><ToolTip tip="MetaFramework for Svelte">SvelteKit</ToolTip></a
+					> project</code
+				></pre>
 			<pre data-prefix="$"><code
-			>pnpm create svelte@latest myApp // To create new sveltekit project</code
-			></pre>
+					>pnpm create svelte@latest myApp // To create new sveltekit project</code
+				></pre>
 			<pre data-prefix=">" class="text-warning"><code>creating...</code></pre>
 			<pre data-prefix=">" class="text-success"><code>Done!</code></pre>
 			<pre data-prefix="$"><code>cd myApp && pnpm i // To install all dependencies</code></pre>
@@ -203,7 +204,8 @@
 				<pre><code>pnpm dev // For pnpm</code></pre>
 				<pre><code>npm run dev // For npm</code></pre>
 				<blockquote>
-					This completes the part how we create new sveltekit project. I'll be explaining some more things about sveltekit after setting up basic needs for app.
+					This completes the part how we create new sveltekit project. I'll be explaining some more
+					things about sveltekit after setting up basic needs for app.
 				</blockquote>
 			</ul>
 		</div>
@@ -214,29 +216,34 @@
 			<h2>Adding TailwindCSS and daisyUI for Design</h2>
 
 			<ul>
-				<li>Now we are going to add Tailwind CSS and DaisyUI to our project, so first open your terminal and make sure you are in root directory of project.</li>
-				<li>Install TailwindCSS and DaisyUI using package manager and then initiate the tailwind config like:	</li>
+				<li>
+					Now we are going to add Tailwind CSS and DaisyUI to our project, so first open your
+					terminal and make sure you are in root directory of project.
+				</li>
+				<li>
+					Install TailwindCSS and DaisyUI using package manager and then initiate the tailwind
+					config like:
+				</li>
 			</ul>
 		</div>
 		<MockupCode>
-		<pre data-prefix="~"><code
-		>Adding <a
-				href="https://tailwindcss.com/docs/guides/sveltekit"
-				target="_blank"
-				rel="noreferrer"
-				class="bg-white text-gray-900 px-1"
-		><ToolTip tip="Utility First CSS Framework">TailwindCSS</ToolTip></a
-		> and <a
-				href="https://daisyui.com/"
-				target="_blank"
-				rel="noreferrer"
-				class="bg-white text-gray-900 px-1"
-		><ToolTip tip="TailwindCSS but sorted">DaisyUI</ToolTip></a
-		> to SvelteKit</code
-		></pre>
-			<pre data-prefix="$"><code
-			>pnpm install -D tailwindcss postcss autoprefixer daisyui</code
-			></pre>
+			<pre data-prefix="~"><code
+					>Adding <a
+						href="https://tailwindcss.com/docs/guides/sveltekit"
+						target="_blank"
+						rel="noreferrer"
+						class="bg-white text-gray-900 px-1"
+						><ToolTip tip="Utility First CSS Framework">TailwindCSS</ToolTip></a
+					> and <a
+						href="https://daisyui.com/"
+						target="_blank"
+						rel="noreferrer"
+						class="bg-white text-gray-900 px-1"
+						><ToolTip tip="TailwindCSS but sorted">DaisyUI</ToolTip></a
+					> to SvelteKit</code
+				></pre>
+			<pre data-prefix="$"><code>pnpm install -D tailwindcss postcss autoprefixer daisyui</code
+				></pre>
 			<pre data-prefix=">" class="text-warning"><code>installing...</code></pre>
 			<pre data-prefix=">" class="text-success"><code>Done!</code></pre>
 			<br />
@@ -245,20 +252,29 @@
 		</MockupCode>
 		<div class="prose max-w-prose mx-auto lg:prose-lg">
 			<ul>
-				<li>Now, we have initiated<code>tailwind.config.cjs</code>we have to change <code>content</code>object according to svelte files.</li>
-				<li>For DaisyUI, we need to add it as<code>plugin</code>in<code>tailwind.config.cjs</code>.</li>
+				<li>
+					Now, we have initiated<code>tailwind.config.cjs</code>we have to change
+					<code>content</code>object according to svelte files.
+				</li>
+				<li>
+					For DaisyUI, we need to add it as<code>plugin</code>in<code>tailwind.config.cjs</code>.
+				</li>
 			</ul>
 		</div>
 		<MockupCode name="tailwind.config.cjs">
 			{#each Object.keys(tailwindConfigJS) as line}
-			<pre data-prefix={line} class={tailwindConfigJS[line].class}><code
-			>{tailwindConfigJS[line].data}</code
-			></pre>
+				<pre data-prefix={line} class={tailwindConfigJS[line].class}><code
+						>{tailwindConfigJS[line].data}</code
+					></pre>
 			{/each}
 		</MockupCode>
 		<div class="prose max-w-prose mx-auto lg:prose-lg">
 			<ul>
-				<li>After setting up tailwind config we have to add a<code>app.css</code>file in<code>src</code>directory of your project and then add following lines of code in that file.</li>
+				<li>
+					After setting up tailwind config we have to add a<code>app.css</code>file in<code
+						>src</code
+					>directory of your project and then add following lines of code in that file.
+				</li>
 			</ul>
 		</div>
 		<MockupCode name="app.css">
@@ -270,7 +286,11 @@
 		</MockupCode>
 		<div class="prose max-w-prose mx-auto lg:prose-lg">
 			<ul>
-				<li>After adding<code>app.css,</code>add<code>+layout.svelte</code>file in<code>src/routes</code>directory.</li>
+				<li>
+					After adding<code>app.css,</code>add<code>+layout.svelte</code>file in<code
+						>src/routes</code
+					>directory.
+				</li>
 				<li>Add following lines of code:</li>
 			</ul>
 		</div>
@@ -283,7 +303,9 @@
 		</MockupCode>
 		<div class="prose max-w-prose mx-auto lg:prose-lg">
 			<ul>
-				<li>After adding TailwindCSS in project, Your project directory will going to look like:</li>
+				<li>
+					After adding TailwindCSS in project, Your project directory will going to look like:
+				</li>
 				<pre>
 				├── package.json
 				├── playwright.config.ts
@@ -312,7 +334,7 @@
 				</blockquote>
 			</ul>
 		</div>
-
 	</section>
 
+	<Routes />
 </div>
