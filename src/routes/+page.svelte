@@ -4,6 +4,7 @@
 	import ToolTip from '$lib/components/ToolTip.svelte';
 	import { browser } from '$app/environment';
 	import Routes from '$lib/guideComponents/Routes.svelte';
+
 	let tailwindConfigJS = {
 		1: { data: 'module.exports = {', class: '' },
 		2: { data: "content: ['./src/**/*.{html,js,svelte,ts}'],", class: 'bg-gray-900 text-gray-100' },
@@ -47,7 +48,11 @@
 	<div class="card card-side bg-base-100 shadow-xl">
 		{#if $page.data.session.user?.image}
 			<figure>
-				<img src={$page.data.session.user.image} alt={$page.data.session.user?.name ?? 'User'} />
+				<img
+					class="object-cover h-fit w-96"
+					src={$page.data.session.user.image}
+					alt={$page.data.session.user?.name ?? 'User'}
+				/>
 			</figure>
 		{/if}
 		<div class="card-body">
